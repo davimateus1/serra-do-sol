@@ -3,15 +3,15 @@ import { ButtonProps } from "../types";
 export const homeData: ButtonProps[] = [
   {
     name: "Institucional",
-    route: "institucional",
+    route: "/institucional",
   },
   {
     name: "Projetos",
-    route: "projetos",
+    route: "/projetos",
   },
   {
     name: "Financeiro",
-    route: "financeiro",
+    route: "/financeiro",
   },
 ];
 
@@ -22,14 +22,14 @@ export const drawerData: ButtonProps[] = [
   },
   {
     name: "Institucional",
-    route: "institucional",
+    route: "/institucional",
   },
   {
     name: "Projetos",
-    route: "projetos",
+    route: "/projetos",
   },
   {
     name: "Financeiro",
-    route: "financeiro",
+    route: "/financeiro",
   },
 ];

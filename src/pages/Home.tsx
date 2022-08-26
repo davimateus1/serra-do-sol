@@ -1,3 +1,3 @@
 import { HomeComponent } from "../components";
 
-export const Home = () => (<HomeComponent />);
+export const Home = () => <HomeComponent />;
