@@ -15,6 +15,7 @@ import {
   Heading,
   Text,
   Icon,
+  Tooltip,
 } from "@chakra-ui/react";
 
 import SolarPanel from "../../assets/images/SolarPanel.svg";
@@ -31,9 +32,22 @@ export const DrawerComponent = () => {
 
   return (
     <>
-      <Button ref={btnRef} onClick={onOpen}>
-        <Icon as={AiOutlineMenu}/>
-      </Button>
+      <Tooltip label="Menu" fontWeight="bold" placement="right" hasArrow bg="brand.800">
+        <Button
+          ref={btnRef}
+          onClick={onOpen}
+          bg="brand.900"
+          _hover={{
+            backgroundColor: "brand.800",
+          }}
+          _focus={{}}
+          _active={{
+            backgroundColor: "brand.900",
+          }}
+        >
+          <Icon as={AiOutlineMenu} color="brand.700" />
+        </Button>
+      </Tooltip>
       <Drawer
         isOpen={isOpen}
         placement="left"
