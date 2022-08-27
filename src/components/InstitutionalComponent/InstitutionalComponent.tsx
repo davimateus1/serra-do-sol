@@ -1,35 +1,31 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
+
+import { MemberComponent } from "../MemberComponent";
+import { NavbarComponent } from "../NavbarComponent";
 
 import SolarPanel from "../../assets/images/SolarPanel.svg";
-import { NavbarComponent } from "../NavbarComponent";
+
 
 export const InstitutionalComponent = () => {
   return (
-    <Flex
-      w="100vw"
-      minH="100vh"
-      h="auto"
-      direction="column"
-      overflowX="hidden"
-    >
+    <Flex w="100vw" h="100vh" direction="column">
       <NavbarComponent />
       <Flex
         bg="brand.900"
         w="100%"
-        h="100%"
+        h="95vh"
         boxShadow={`inset 0px 50px 13px -35px #2a69ac`}
         bgImage={`url(${SolarPanel})`}
-        bgSize="3.5rem"
+        bgSize="3rem"
         bgRepeat="repeat"
-        justify="center"
         alignItems="center"
         direction="column"
+        overflowX="hidden"
       >
-        <Flex bg="white" w="50%" h="25rem" mt="3rem"></Flex>
-        <Flex bg="white" w="50%" h="25rem" mt="3rem"></Flex>
-        <Flex bg="white" w="50%" h="25rem" mt="3rem"></Flex>
-        <Flex bg="white" w="50%" h="25rem" mt="3rem"></Flex>
-        <Flex bg="white" w="50%" h="25rem" mt="3rem"></Flex>
+        <Heading fontSize="3rem" m="2.5rem 0" >
+          INSTITUCIONAL
+        </Heading>
+        <MemberComponent />
       </Flex>
     </Flex>
   );

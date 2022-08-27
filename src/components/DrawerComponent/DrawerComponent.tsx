@@ -32,7 +32,13 @@ export const DrawerComponent = () => {
 
   return (
     <>
-      <Tooltip label="Menu" fontWeight="bold" placement="right" hasArrow bg="brand.800">
+      <Tooltip
+        label="Menu"
+        fontWeight="bold"
+        placement="right"
+        hasArrow
+        bg="brand.800"
+      >
         <Button
           ref={btnRef}
           onClick={onOpen}
@@ -94,7 +100,10 @@ export const DrawerComponent = () => {
                 m="1rem"
                 minH="3rem"
                 borderRadius="1rem"
-                action={() => navigate(item.route)}
+                action={() => {
+                  navigate(item.route);
+                  onClose();
+                }}
               />
             ))}
           </DrawerBody>
