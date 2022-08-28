@@ -92,8 +92,9 @@ export const DrawerComponent = () => {
             bgImage={`url(${SolarPanel})`}
             alignItems="center"
           >
-            {drawerData.map((item) => (
+            {drawerData.map((item, index) => (
               <ButtonComponent
+                key={index}
                 title={item.name}
                 m="1rem"
                 minH="3rem"

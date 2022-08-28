@@ -5,3 +5,4 @@ export * from "./ButtonComponent";
 export * from "./NavbarComponent";
 export * from "./MemberComponent";
 export * from "./ProjectsComponent";
+export * from "./FinancialComponent";
