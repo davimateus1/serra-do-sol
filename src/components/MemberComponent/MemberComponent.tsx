@@ -12,7 +12,6 @@ import {
   Box,
   AccordionIcon,
   Image,
-  Badge,
   Text,
   Link,
 } from "@chakra-ui/react";
@@ -20,7 +19,7 @@ import {
 import { AiFillLinkedin } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
 
-import Constelation from "../../assets/images/Constelation.svg";
+import Constelation from "../../assets/images/svgs/Constelation.svg";
 
 import { institutionalData } from "../../data";
 
@@ -52,7 +51,6 @@ export const MemberComponent = () => {
           );
         })}
       </TabList>
-
       <TabPanels>
         {institutionalData.map((member, index) => (
           <TabPanel key={index}>
@@ -76,25 +74,6 @@ export const MemberComponent = () => {
                   </h2>
                   <AccordionPanel pb={4}>
                     <Text color="brand.900">{member.description}</Text>
-                    <Flex mt="1rem">
-                      {member.linkedIn !== "" && (
-                        <Link
-                          color="brand.900"
-                          fontSize="1.5rem"
-                          href={member.linkedIn}
-                          isExternal
-                        >
-                          <AiFillLinkedin />
-                        </Link>
-                      )}
-                      <Link
-                        color="brand.900"
-                        fontSize="1.5rem"
-                        href={`mailto:${member.email}`}
-                      >
-                        <HiOutlineMail />
-                      </Link>
-                    </Flex>
                   </AccordionPanel>
                 </AccordionItem>
               </Accordion>
@@ -120,9 +99,25 @@ export const MemberComponent = () => {
                   alt={member.name}
                   objectFit="cover"
                 />
-                <Badge variant="solid" colorScheme="green" mt="1rem">
-                  {member.office}
-                </Badge>
+                <Flex mt="1rem">
+                  {member.linkedIn !== "" && (
+                    <Link
+                      color="brand.700"
+                      fontSize="2rem"
+                      href={member.linkedIn}
+                      isExternal
+                    >
+                      <AiFillLinkedin />
+                    </Link>
+                  )}
+                  <Link
+                    color="brand.700"
+                    fontSize="2rem"
+                    href={`mailto:${member.email}`}
+                  >
+                    <HiOutlineMail />
+                  </Link>
+                </Flex>
               </Flex>
             </Flex>
           </TabPanel>

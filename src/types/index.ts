@@ -14,7 +14,6 @@ export type MemberProps = {
   name: string;
   image: string;
   description: string;
-  office: string;
   linkedIn: string;
   email: string;
 };

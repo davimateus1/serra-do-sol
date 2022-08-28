@@ -1,9 +1,12 @@
 import { Flex, Heading, Image } from "@chakra-ui/react";
-import SolarPanel from "../../assets/images/SolarPanel.svg";
-import SerraLogo from "../../assets/images/SerraLogo.svg";
-import UfvPhoto from "../../assets/images/UfvPhoto.jpg";
+
+import SolarPanel from "../../assets/images/svgs/SolarPanel.svg";
+import SerraLogo from "../../assets/images/svgs/SerraLogo.svg";
+import UfvPhoto from "../../assets/images/others/UfvPhoto.jpg";
+
 import { homeData } from "../../data";
 import { useNavigate } from "react-router-dom";
+
 import { ButtonComponent } from "../ButtonComponent";
 
 export const HomeComponent = () => {

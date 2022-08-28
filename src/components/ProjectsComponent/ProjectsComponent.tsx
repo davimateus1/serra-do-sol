@@ -1,12 +1,12 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
-
-import { MemberComponent } from "../MemberComponent";
 import { NavbarComponent } from "../NavbarComponent";
 
 import Wave from "../../assets/images/svgs/Wave.svg";
+
+import { LocaleAccess } from "./LocateAccess";
 import { Scrollbar } from "../../assets";
 
-export const InstitutionalComponent = () => {
+export const ProjectsComponent = () => {
   return (
     <Flex w="100vw" h="100vh" direction="column">
       <NavbarComponent />
@@ -23,12 +23,12 @@ export const InstitutionalComponent = () => {
         sx={{ ...Scrollbar }}
       >
         <Heading fontSize="3rem" mt="2.5rem">
-          INSTITUCIONAL
+          PROJETOS
         </Heading>
-        <Text fontSize="1.4rem" fontStyle="italic" mb="0.7rem">
-          Sócios
+        <Text fontSize="1.5rem" fontStyle="italic" mb="0.7rem">
+          CFV Serra do Sol I, II, III, IV, V e VI
         </Text>
-        <MemberComponent />
+        <LocaleAccess />
       </Flex>
     </Flex>
   );

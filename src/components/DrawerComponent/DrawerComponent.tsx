@@ -10,16 +10,14 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerBody,
-  DrawerFooter,
   useDisclosure,
   Heading,
-  Text,
   Icon,
   Tooltip,
 } from "@chakra-ui/react";
 
-import SolarPanel from "../../assets/images/SolarPanel.svg";
-import SunVerion from "../../assets/images/SunVersion.webp";
+import SolarPanel from "../../assets/images/svgs/SolarPanel.svg";
+import SunVerion from "../../assets/images/others/SunVersion.webp";
 
 import { drawerData } from "../../data";
 import { ButtonComponent } from "../ButtonComponent";
@@ -107,25 +105,6 @@ export const DrawerComponent = () => {
               />
             ))}
           </DrawerBody>
-
-          <DrawerFooter
-            display="flex"
-            justifyContent="center"
-            bg="brand.800"
-            boxShadow={`inset 0px 50px 16px -35px #2a69ac`}
-            h="5rem"
-            alignItems="center"
-          >
-            <Text
-              textAlign="center"
-              w="95%"
-              color="rgba.black"
-              fontWeight="bold"
-              mt="1rem"
-            >
-              Desenvolvido por: Davi Mateus
-            </Text>
-          </DrawerFooter>
         </DrawerContent>
       </Drawer>
     </>

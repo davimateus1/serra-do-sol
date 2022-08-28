@@ -1,7 +1,7 @@
 import { Flex, Heading, Image } from "@chakra-ui/react";
 import { DrawerComponent } from "../DrawerComponent";
 
-import SerraLogo from "../../assets/images/SerraLogo.svg";
+import SerraLogo from "../../assets/images/svgs/SerraLogo.svg";
 
 export const NavbarComponent = () => {
   return (
