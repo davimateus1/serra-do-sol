@@ -17,3 +17,10 @@ export type MemberProps = {
   linkedIn: string;
   email: string;
 };
+
+export type AccordionProps = {
+  isList: boolean;
+  title: string;
+  description?: string;
+  list?: { description: string }[];
+};

@@ -1,4 +1,4 @@
-import { ButtonProps, MemberProps } from "../types";
+import { AccordionProps, ButtonProps, MemberProps } from "../types";
 
 import Angelo from "../assets/images/members/Angelo.jpeg";
 import Davi from "../assets/images/members/Davi.jpeg";
@@ -108,7 +108,7 @@ export const institutionalData: MemberProps[] = [
   },
 ];
 
-export const accordionsData = [
+export const accordionsData: AccordionProps[] = [
   {
     isList: false,
     title: "Localização e Acesso",
