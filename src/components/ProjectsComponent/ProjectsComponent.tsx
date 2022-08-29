@@ -5,6 +5,7 @@ import Wave from "../../assets/images/svgs/Wave.svg";
 
 import { LocaleAccess } from "./LocateAccess";
 import { Scrollbar } from "../../assets";
+import { FooterComponent } from "../FooterComponent";
 
 export const ProjectsComponent = () => {
   return (
@@ -30,6 +31,7 @@ export const ProjectsComponent = () => {
         </Text>
         <LocaleAccess />
       </Flex>
+      <FooterComponent />
     </Flex>
   );
 };

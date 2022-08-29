@@ -5,6 +5,7 @@ import { NavbarComponent } from "../NavbarComponent";
 
 import Wave from "../../assets/images/svgs/Wave.svg";
 import { Scrollbar } from "../../assets";
+import { FooterComponent } from "../FooterComponent";
 
 export const InstitutionalComponent = () => {
   return (
@@ -30,6 +31,7 @@ export const InstitutionalComponent = () => {
         </Text>
         <MemberComponent />
       </Flex>
+      <FooterComponent />
     </Flex>
   );
 };

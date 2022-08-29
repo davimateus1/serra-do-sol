@@ -7,6 +7,7 @@ import Gilberto from "../assets/images/members/Gilberto.jpeg";
 import Gustavo from "../assets/images/members/Gustavo.jpeg";
 import Murilo from "../assets/images/members/Murilo.jpeg";
 import Petrus from "../assets/images/members/Petrus.jpeg";
+import Manoel from "../assets/images/members/Manoel.jpeg";
 
 export const homeData: ButtonProps[] = [
   {
@@ -100,7 +101,7 @@ export const institutionalData: MemberProps[] = [
   },
   {
     name: "Manoel Dias",
-    image: "",
+    image: Manoel,
     description:
       "Engo Eletricista, ocupou cargos executivos em Multinacionais (BBC, ABB, Alstom, PV Solar). 40 anos de experiencia no setor.",
     linkedIn: "",

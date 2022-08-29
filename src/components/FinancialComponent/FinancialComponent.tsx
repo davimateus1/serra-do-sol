@@ -1,9 +1,11 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import { NavbarComponent } from "../NavbarComponent";
+import { FooterComponent } from "../FooterComponent";
+
+import { Scrollbar } from "../../assets";
 
 import Wave from "../../assets/images/svgs/Wave.svg";
 
-import { Scrollbar } from "../../assets";
 import SinglePagePDF from "./SinglePagePDF";
 import { SerraDoSol64 } from "../../data/pdfs/Base64";
 
@@ -32,6 +34,7 @@ export const FinancialComponent = () => {
         </Text>
         <SinglePagePDF pdf={SerraDoSol64} />
       </Flex>
+      <FooterComponent />
     </Flex>
   );
 };
