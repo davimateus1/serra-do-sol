@@ -1,18 +1,17 @@
 import { Button, Flex, Text } from "@chakra-ui/react";
-import { useState } from "react";
-import { ReactNode } from "react";
-import { useCallback } from "react";
+import { memo, useState, ReactNode, useCallback } from "react";
+
 import { Document, Page, pdfjs } from "react-pdf";
 
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 
-export default function SinglePagePDF({ pdf }) {
+const SinglePagePDF = ({ pdf }: { pdf: string }) => {
   pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
   const [numPages, setNumPages] = useState<ReactNode>(null);
   const [pageNumber, setPageNumber] = useState<number>(1);
 
-  const onDocumentLoadSuccess = ({ numPages }) => {
+  const onDocumentLoadSuccess = ({ numPages }: { numPages: number }) => {
     setNumPages(numPages);
     setPageNumber(1);
   };
@@ -77,4 +76,6 @@ export default function SinglePagePDF({ pdf }) {
       </Document>
     </Flex>
   );
-}
+};
+
+export default memo(SinglePagePDF);
