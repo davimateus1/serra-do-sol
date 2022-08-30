@@ -31,8 +31,8 @@ export const ErrorComponent = () => {
         top="3rem"
         textAlign="center"
       >
-        <Heading fontSize="5rem">ERRO 404:</Heading>
-        <Text fontSize="2rem">Página não encontrada</Text>
+        <Heading fontSize="6xl">ERRO 404:</Heading>
+        <Text fontSize="2xl">Página não encontrada</Text>
       </Flex>
       <ButtonComponent
         title="Voltar ao Menu"

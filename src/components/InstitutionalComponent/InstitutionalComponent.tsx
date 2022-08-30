@@ -2,10 +2,12 @@ import { Flex, Heading, Text } from "@chakra-ui/react";
 
 import { MemberComponent } from "../MemberComponent";
 import { NavbarComponent } from "../NavbarComponent";
-
-import Wave from "../../assets/images/svgs/Wave.svg";
 import { Scrollbar } from "../../assets";
 import { FooterComponent } from "../FooterComponent";
+
+import Wave from "../../assets/images/svgs/Wave.svg";
+
+import { fontStyle } from "../../styles";
 
 export const InstitutionalComponent = () => {
   return (
@@ -23,10 +25,10 @@ export const InstitutionalComponent = () => {
         overflowX="hidden"
         sx={{ ...Scrollbar }}
       >
-        <Heading fontSize="3rem" mt="2.5rem">
+        <Heading w={fontStyle} mt="2.5rem">
           INSTITUCIONAL
         </Heading>
-        <Text fontSize="1.4rem" fontStyle="italic" mb="0.7rem">
+        <Text w={fontStyle} fontStyle="italic" mb="0.7rem" fontWeight="bold">
           Sócios
         </Text>
         <MemberComponent />

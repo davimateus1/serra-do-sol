@@ -27,11 +27,35 @@ import Altimetric from "../../assets/images/projects/Altimetric.png";
 
 import { accordionsData } from "../../data";
 
+import {
+  directionStyle,
+  sizeStyle,
+  fontStyle,
+  marginTopStyle,
+} from "../../styles";
+
 export const LocaleAccess = () => {
   return (
-    <Flex w="90%" h="90%" align="center" p="2rem" direction="column">
+    <Flex
+      w={{ base: "85%", xl: "85%", lg: "85%", md: "85%", sm: "98%" }}
+      h="90%"
+      align="center"
+      direction="column"
+    >
       {accordionsData.map((item, index) => (
-        <Accordion allowToggle w="80%" border="none" mt="1rem" key={index}>
+        <Accordion
+          allowToggle
+          border="none"
+          mt="1rem"
+          w={{
+            base: "80%",
+            xl: "80%",
+            lg: "80%",
+            md: "80%",
+            sm: "100%",
+          }}
+          key={index}
+        >
           <AccordionItem
             borderRadius="2rem"
             p="1rem"
@@ -40,11 +64,11 @@ export const LocaleAccess = () => {
           >
             <AccordionButton>
               <Box flex="1" textAlign="left">
-                <Text fontWeight="bold" color="white" fontSize="1.2rem">
+                <Text fontWeight="bold" color="white" fontSize="md">
                   {item.title}
                 </Text>
               </Box>
-              <AccordionIcon color="white" fontSize="2rem" />
+              <AccordionIcon color="white" fontSize="4xl" />
             </AccordionButton>
             <AccordionPanel pb={4}>
               {!item.isList ? (
@@ -77,43 +101,89 @@ export const LocaleAccess = () => {
         <Heading
           fontWeight="bold"
           color="brand.900"
-          fontSize="3rem"
+          w={fontStyle}
           textAlign="center"
           fontStyle="oblique"
         >
           Localização e Acesso
         </Heading>
-        <Flex justifyContent="space-between" w="100%" align="center">
-          <Image w="35%" h="85%" borderRadius="1rem" src={Total} alt="Imagem" />
+        <Flex
+          justifyContent="space-between"
+          w="100%"
+          align="center"
+          direction={directionStyle}
+        >
           <Image
-            w="60%"
+            h="85%"
+            borderRadius="1rem"
+            src={Total}
+            alt="Imagem"
+            mt={marginTopStyle}
+            w={{
+              base: "35%",
+              xl: "35%",
+              lg: "35%",
+              md: "35%",
+              sm: "100%",
+            }}
+          />
+          <Image
+            w={{
+              base: "60%",
+              xl: "60%",
+              lg: "60%",
+              md: "60%",
+              sm: "100%",
+            }}
             h="85%"
             borderRadius="1rem"
             src={Locale}
             alt="Imagem"
+            mt={marginTopStyle}
           />
         </Flex>
-        <Flex justifyContent="space-between" w="100%">
+        <Flex
+          justifyContent="space-between"
+          w="100%"
+          direction={directionStyle}
+        >
           <Image
-            w="45%"
+            w={{
+              base: "45%",
+              xl: "45%",
+              lg: "45%",
+              md: "45%",
+              sm: "100%",
+            }}
             h="90%"
             borderRadius="1rem"
             src={Locations}
             alt="Imagem"
+            mt={marginTopStyle}
           />
-          <Flex direction="column" w="50%">
+          <Flex
+            direction="column"
+            w={{
+              base: "50%",
+              xl: "50%",
+              lg: "50%",
+              md: "50%",
+              sm: "100%",
+            }}
+          >
             <Image
               w="100%"
               h="90%"
               borderRadius="1rem"
               src={Route}
               alt="Imagem"
+              mt={marginTopStyle}
             />
             <Text
               color="brand.900"
               mt="1rem"
               textAlign="center"
-              fontSize="1rem"
+              fontSize="md"
             >
               O empreendimento dista aproximadamente 32 km do perímetro urbano
               de Serra Talhada, com acessos que se dão pela Rodovia BR-232.
@@ -127,13 +197,9 @@ export const LocaleAccess = () => {
             borderRadius="1rem"
             src={ReferencePoint}
             alt="Imagem"
+            mt={marginTopStyle}
           />
-          <Text
-            color="brand.900"
-            mt="1rem"
-            textAlign="center"
-            fontSize="1rem"
-          >
+          <Text color="brand.900" mt="1rem" textAlign="center" fontSize="md">
             Rodovia BR-232 nas proximidades do empreendimento.
           </Text>
         </Flex>
@@ -141,14 +207,19 @@ export const LocaleAccess = () => {
         <Heading
           fontWeight="bold"
           color="brand.900"
-          fontSize="3rem"
+          w={fontStyle}
           textAlign="center"
           fontStyle="oblique"
         >
           Caracterização do Terreno da UFV
         </Heading>
-        <Flex justifyContent="space-between" w="100%" mt="2rem">
-          <Flex direction="column" w="47%">
+        <Flex
+          justifyContent="space-between"
+          w="100%"
+          mt="2rem"
+          direction={directionStyle}
+        >
+          <Flex direction="column" w={sizeStyle}>
             <Image
               w="100%"
               h="90%"
@@ -160,7 +231,7 @@ export const LocaleAccess = () => {
               color="brand.900"
               mt="1rem"
               textAlign="center"
-              fontSize="1.rem"
+              fontSize="md"
             >
               Mapa Altimétrico da área: A região é de baixa complexidade do
               ponto de vista topográfico, caracterizada por uma superfície de
@@ -168,7 +239,7 @@ export const LocaleAccess = () => {
               suave-ondulado
             </Text>
           </Flex>
-          <Flex direction="column" w="47%">
+          <Flex direction="column" w={sizeStyle}>
             <Image
               w="100%"
               h="90%"
@@ -180,7 +251,7 @@ export const LocaleAccess = () => {
               color="brand.900"
               mt="1rem"
               textAlign="center"
-              fontSize="1rem"
+              fontSize="md"
             >
               Mapa de declividade da área o empreendimento
             </Text>

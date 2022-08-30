@@ -13,7 +13,7 @@ export const FooterComponent = () => {
       direction="column"
     >
       <Image src={SerraLogo} w="2rem" />
-      <Heading textAlign="center" w="100%" color="brand.900" fontSize="1rem">
+      <Heading textAlign="center" w="100%" color="brand.900" fontSize="md">
         Todos os direitos reservados &copy;
       </Heading>
     </Flex>

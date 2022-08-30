@@ -60,7 +60,7 @@ export const DrawerComponent = () => {
       >
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerCloseButton color="brand.600" fontSize="1.2rem" />
+          <DrawerCloseButton color="brand.600" fontSize="xl" />
           <DrawerHeader
             display="flex"
             justifyContent="center"
@@ -75,7 +75,7 @@ export const DrawerComponent = () => {
               m="2rem 2rem 3rem 2rem"
               borderRadius="1rem"
               p="0.6rem"
-              fontSize="1.5rem"
+              fontSize="2xl"
             >
               Energética Serra do Sol
             </Heading>

@@ -15,8 +15,19 @@ export const NavbarComponent = () => {
     >
       <DrawerComponent />
       <Flex alignItems="center" w="auto">
-        <Image src={SerraLogo} w="5rem" mr="0.5rem" />
-        <Heading color="brand.900" fontSize="1.3rem" textAlign="center">
+        <Image
+          src={SerraLogo}
+          w="5rem"
+          mr="0.5rem"
+          display={{
+            base: "flex",
+            xl: "flex",
+            lg: "flex",
+            md: "flex",
+            sm: "none",
+          }}
+        />
+        <Heading color="brand.900" fontSize="xl" textAlign="right">
           Energética Serra do Sol
         </Heading>
       </Flex>

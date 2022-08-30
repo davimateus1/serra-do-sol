@@ -6,6 +6,7 @@ import Wave from "../../assets/images/svgs/Wave.svg";
 import { LocaleAccess } from "./LocateAccess";
 import { Scrollbar } from "../../assets";
 import { FooterComponent } from "../FooterComponent";
+import { fontStyle } from "../../styles";
 
 export const ProjectsComponent = () => {
   return (
@@ -23,10 +24,16 @@ export const ProjectsComponent = () => {
         overflowX="hidden"
         sx={{ ...Scrollbar }}
       >
-        <Heading fontSize="3rem" mt="2.5rem">
+        <Heading w={fontStyle} mt="2.5rem">
           PROJETOS
         </Heading>
-        <Text fontSize="1.5rem" fontStyle="italic" mb="0.7rem">
+        <Text
+          w={fontStyle}
+          fontStyle="italic"
+          mb="0.7rem"
+          textAlign="center"
+          fontWeight="bold"
+        >
           CFV Serra do Sol I, II, III, IV, V e VI
         </Text>
         <LocaleAccess />
