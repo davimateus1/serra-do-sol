@@ -145,7 +145,7 @@ export const MemberComponent = () => {
                 <Image
                   borderRadius="full"
                   boxSize="50%"
-                  w="auto"
+                  w="15rem"
                   h="100%"
                   src={member.image}
                   alt={member.name}
