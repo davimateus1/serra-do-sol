@@ -114,7 +114,7 @@ export const accordionsData: AccordionProps[] = [
     isList: false,
     title: "Localização e Acesso",
     description:
-      "O CFV Serra do Sol situa-se no município de Serra Talhada à 415 Km de Recife PE, pertencente à Mesorregião do Sertão Pernambucano, à Microrregião hidrográfica de Pajeú, e ao contexto geológico da porção central da Província Borborema, com altitude média de 443 metros.",
+      "O UFV Serra do Sol situa-se no município de Serra Talhada à 415 Km de Recife PE, pertencente à Mesorregião do Sertão Pernambucano, à Microrregião hidrográfica de Pajeú, e ao contexto geológico da porção central da Província Borborema, com altitude média de 443 metros.",
   },
   {
     isList: true,

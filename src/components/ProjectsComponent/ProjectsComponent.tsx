@@ -34,7 +34,7 @@ export const ProjectsComponent = () => {
           textAlign="center"
           fontWeight="bold"
         >
-          CFV Serra do Sol I, II, III, IV, V e VI
+          UFV Serra do Sol I, II, III, IV, V e VI
         </Text>
         <LocaleAccess />
       </Flex>
