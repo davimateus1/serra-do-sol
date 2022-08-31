@@ -84,6 +84,8 @@ const SinglePagePDF = ({ pdf }: { pdf: string }) => {
           }}
           _focus={{}}
           _active={{}}
+          disabled={pageNumber === 1}
+          _disabled={{ cursor: "not-allowed", opacity: 0.3 }}
         >
           <MdArrowBackIosNew color="white" />
         </Button>
@@ -99,6 +101,8 @@ const SinglePagePDF = ({ pdf }: { pdf: string }) => {
           }}
           _focus={{}}
           _active={{}}
+          disabled={pageNumber === 12}
+          _disabled={{ cursor: "not-allowed", opacity: 0.3 }}
         >
           <MdArrowForwardIos color="white" />
         </Button>
