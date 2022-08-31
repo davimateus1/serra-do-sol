@@ -95,7 +95,7 @@ export const institutionalData: MemberProps[] = [
     name: "Petrus Santos",
     image: Petrus,
     description:
-      "Economista, sócio da PPK consultoria financeira em Recife, PE.",
+      "Contador, sócio da Petra Consultores em Recife, PE.",
     linkedIn: "",
     email: "petrus@energeticaserradosol.com.br",
   },
