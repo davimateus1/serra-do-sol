@@ -101,7 +101,7 @@ const SinglePagePDF = ({ pdf }: { pdf: string }) => {
           }}
           _focus={{}}
           _active={{}}
-          disabled={pageNumber === 12}
+          disabled={pageNumber === numPages}
           _disabled={{ cursor: "not-allowed", opacity: 0.3 }}
         >
           <MdArrowForwardIos color="white" />
